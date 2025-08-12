@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='stylesheet' href='../../assets/css/style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5a9db621cf.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>LabWeb: Simuladores</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Início</a>
+            <a href="../recicla/index.html">Recicla</a>
+            <a href="../programacao/index.html">Programação</a>
+            <a href="../simuladores/index.html">Simuladores</a>
+            <a href="../quantica/index.html">Quântica</a>
+            <a href="../fale-conosco/index.html">Fale Conosco</a>
+        </nav>
+    </header>
+    <div class='container'>
+        <section class='topo'>
+            <h1><span>&lt;</span>labweb<span>/&gt;</span></h1>
+        </section>
+        <img id='wave' draggable='false' src='../../assets/img/wave.svg'>
+        <section class='labweb'>
+            <div class='sub-labweb programacao'>
+                <div class='box .box-zero' style='cursor: default;'>
+                    <div class="information">
+                        <h1>Simuladores</h1>
+                        <p>
+                            O projeto "LabWeb – Laboratório virtual para ensino de Telecomunicações", tem como finalidade desenvolver uma ferramenta de simulação computacional, para apoio didático ao ensino de Sistemas de Telecomunicações dos cursos técnicos e engenharia de telecomunicações, assim como, permitir o ensino à distância e a difusão dos conceitos inerentes a esta tecnologia. Esta ferramenta proporcionará uma visão completa dos componentes dos sistemas de telecomunicações e suas interações. Através de modificações nos parâmetros de funcionamento dos componentes de cada sistema, o estudante poderá analisar os resultados da nova situação proposta. 
+                        </p>
+
+                        <p>
+                            Desta forma, será obtida uma interação entre determinada tecnologia e o incremento meu ip no conhecimento e experiência do estudante, além de propiciar pesquisas aplicadas ao tema. Os objetivos do projeto são o estímulo à autonomia cognitiva; o auxílio à aprendizagem por meio da interação homem-máquina e o uso de tecnologias de informação e comunicação como recurso em processos educacionais. O software está sendo desenvolvido utilizando linguagens como Java Script, HTML e CSS, para geração dos códigos. Tal fato dissemina o uso de software livre e dispensa a necessidade de licença para utilização de softwares proprietários. Com este material, pretende-se minimizar as dificuldades na compreensão dos sistemas de telecomunicações e estimular o interesse pelo tema.
+                        </p>
+                    </div>
+                </div>
+                <div class='projects'>
+                    <div class='box box-one apres' style='cursor: default;'>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PH5JixVAuRs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                        <div class="modulos" id='1'>
+                            <h1>AMDSB</h1>
+
+                            <div class='box box-one' style='cursor: default;'>
+
+                                <h2>Sinal Modulante</h2>
+
+                                <canvas class="modulante" width="493.016" height="250"></canvas>
+
+                                <div class="entradaMod">
+
+                                    <p>Amplitude</p>
+                                    <input type="number" class="ampMod" min="0" max="100" step="5">
+
+                                    <p>Frequência</p>
+                                    <select class="myselect">
+                                        <option value="100">3kHz</option>
+                                        <option value="75">4kHz</option>
+                                        <option value="60">5kHz</option>
+                                        <option value="50">6kHz</option>
+                                        <option value="37.5">8kHz</option>
+                                        <option value="30">10kHz</option>
+                                   </select>
+
+                                    <p>Fase</p>
+                                    <input type="number" class="faseMod" min="0" max="360" step="5">
+
+                                </div>
+
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <h2>Sinal Modulado</h2>
+
+                                <canvas class="sinal" width="493.016" height="250"></canvas>
+
+                                <div class="comandos">
+
+                                    <input type="button" class="click" value="Modular">
+                                    <input type="button" class="tela" value="Ver detalhes">
+                                    <input type="text" class="indice" placeholder="Índice de Modulação" readonly="">
+
+                                </div>
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <h2>Sinal da Portadora</h2>
+
+                                <canvas class="portadora" width="493.016" height="250"></canvas>
+
+                                <div class="entradaPort">
+
+                                    <p>Amplitude</p>
+                                    <input type="number" class="ampPort" min="0" max="100" step="5">
+
+                                    <p>Frequência</p>
+                                    <select class="myselect2">
+                                        <option value="16.43333">3MHz</option>
+                                        <option value="12.325">4MHz</option>
+                                        <option value="9.86">5MHz</option>
+                                        <option value="8.21666">6MHz</option>
+                                        <option value="6">10MHz</option>
+                                    </select>
+
+                                    <p>Fase</p>
+                                    <input type="number" class="faseMod" min="0" max="360" step="5">
+
+                                </div>
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <div class="espectro">
+                                    <h2>Espectro AMDSB</h2>
+                                    <canvas class="espec" width="493.016" height="250"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modulos" id="2">
+                            <h1>AMDSB/SC</h1>
+                            
+                            <div class='box box-one' style='cursor: default;'>
+
+                                <h2>Sinal Modulante</h2>
+
+                                <canvas class="modulante" width="493.016" height="250"></canvas>
+
+                                <div class="entradaMod">
+
+                                    <p>Amplitude</p>
+                                    <input type="number" class="ampMod" min="0" max="100" step="5">
+
+                                    <p>Frequência</p>
+                                    <select class="myselect">
+                                        <option value="100">3kHz</option>
+                                        <option value="75">4kHz</option>
+                                        <option value="60">5kHz</option>
+                                        <option value="50">6kHz</option>
+                                        <option value="37.5">8kHz</option>
+                                        <option value="30">10kHz</option>
+                                   </select>
+
+                                    <p>Fase</p>
+                                    <input type="number" class="faseMod" min="0" max="360" step="5">
+
+                                </div>
+
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <h2>Sinal Modulado</h2>
+
+                                <canvas class="sinal" width="493.016" height="250"></canvas>
+
+                                <div class="comandos">
+
+                                    <input type="button" class="click" value="Modular">
+                                    <input type="button" class="tela" value="Ver detalhes">
+                                    <input type="text" class="indice" placeholder="Índice de Modulação" readonly="">
+
+                                </div>
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <h2>Sinal da Portadora</h2>
+
+                                <canvas class="portadora" width="493.016" height="250"></canvas>
+
+                                <div class="entradaPort">
+
+                                    <p>Amplitude</p>
+                                    <input type="number" class="ampPort" min="0" max="100" step="5">
+
+                                    <p>Frequência</p>
+                                    <select class="myselect2">
+                                        <option value="16.43333">3MHz</option>
+                                        <option value="12.325">4MHz</option>
+                                        <option value="9.86">5MHz</option>
+                                        <option value="8.21666">6MHz</option>
+                                        <option value="6">10MHz</option>
+                                    </select>
+
+                                    <p>Fase</p>
+                                    <input type="number" class="faseMod" min="0" max="360" step="5">
+
+                                </div>
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <div class="espectro">
+                                    <h2>Espectro AMDSB/SC</h2>
+                                    <canvas class="espec" width="493.016" height="250"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modulos" id="3">
+                            <h1>B-PSK</h1>
+                            <div class='box box-one' style='cursor: default;'>
+
+                                <h2>Sinal Modulante</h2>
+
+                                <canvas class="modulante" width="493.016" height="250"></canvas>
+
+                                <div class="entradaMod">
+
+                                    <p>Amplitude</p>
+                                    <input type="number" class="ampMod" min="0" max="100" step="5">
+
+                                    <p>Frequência</p>
+                                    <select class="myselect">
+                                        <option value="100">3kHz</option>
+                                        <option value="75">4kHz</option>
+                                        <option value="60">5kHz</option>
+                                        <option value="50">6kHz</option>
+                                        <option value="37.5">8kHz</option>
+                                        <option value="30">10kHz</option>
+                                   </select>
+
+                                    <p>Fase</p>
+                                    <input type="number" class="faseMod" min="0" max="360" step="5">
+
+                                </div>
+
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <h2>Sinal Modulado</h2>
+
+                                <canvas class="sinal" width="493.016" height="250"></canvas>
+
+                                <div class="comandos">
+
+                                    <input type="button" class="click" value="Modular">
+                                    <input type="button" class="tela" value="Ver detalhes">
+                                    <input type="text" class="indice" placeholder="Índice de Modulação" readonly="">
+
+                                </div>
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <h2>Sinal da Portadora</h2>
+
+                                <canvas class="portadora" width="493.016" height="250"></canvas>
+
+                                <div class="entradaPort">
+
+                                    <p>Amplitude</p>
+                                    <input type="number" class="ampPort" min="0" max="100" step="5">
+
+                                    <p>Frequência</p>
+                                    <select class="myselect2">
+                                        <option value="16.43333">3MHz</option>
+                                        <option value="12.325">4MHz</option>
+                                        <option value="9.86">5MHz</option>
+                                        <option value="8.21666">6MHz</option>
+                                        <option value="6">10MHz</option>
+                                    </select>
+
+                                    <p>Fase</p>
+                                    <input type="number" class="faseMod" min="0" max="360" step="5">
+
+                                </div>
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <div class="espectro">
+                                    <h2>Espectro B-PSK</h2>
+                                    <canvas class="espec" width="493.016" height="250"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modulos" id="4">
+                            <h1>B-ASK</h1>
+                            <div class='box box-one' style='cursor: default;'>
+
+                                <h2>Sinal Modulante</h2>
+
+                                <canvas class="modulante" width="493.016" height="250"></canvas>
+
+                                <div class="entradaMod">
+
+                                    <p>Amplitude</p>
+                                    <input type="number" class="ampMod" min="0" max="100" step="5">
+
+                                    <p>Frequência</p>
+                                    <select class="myselect">
+                                        <option value="100">3kHz</option>
+                                        <option value="75">4kHz</option>
+                                        <option value="60">5kHz</option>
+                                        <option value="50">6kHz</option>
+                                        <option value="37.5">8kHz</option>
+                                        <option value="30">10kHz</option>
+                                   </select>
+
+                                    <p>Fase</p>
+                                    <input type="number" class="faseMod" min="0" max="360" step="5">
+
+                                </div>
+
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <h2>Sinal Modulado</h2>
+
+                                <canvas class="sinal" width="493.016" height="250"></canvas>
+
+                                <div class="comandos">
+
+                                    <input type="button" class="click" value="Modular">
+                                    <input type="button" class="tela" value="Ver detalhes">
+                                    <input type="text" class="indice" placeholder="Índice de Modulação" readonly="">
+
+                                </div>
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <h2>Sinal da Portadora</h2>
+
+                                <canvas class="portadora" width="493.016" height="250"></canvas>
+
+                                <div class="entradaPort">
+
+                                    <p>Amplitude</p>
+                                    <input type="number" class="ampPort" min="0" max="100" step="5">
+
+                                    <p>Frequência</p>
+                                    <select class="myselect2">
+                                        <option value="16.43333">3MHz</option>
+                                        <option value="12.325">4MHz</option>
+                                        <option value="9.86">5MHz</option>
+                                        <option value="8.21666">6MHz</option>
+                                        <option value="6">10MHz</option>
+                                    </select>
+
+                                    <p>Fase</p>
+                                    <input type="number" class="faseMod" min="0" max="360" step="5">
+
+                                </div>
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <div class="espectro">
+                                    <h2>Espectro B-ASK</h2>
+                                    <canvas class="espec" width="493.016" height="250"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modulos" id="5">
+                            <h1>B-FSK</h1>
+                            <div class='box box-one' style='cursor: default;'>
+
+                                <h2>Sinal Modulante</h2>
+
+                                <canvas class="modulante" width="493.016" height="250"></canvas>
+
+                                <div class="entradaMod">
+
+                                    <p>Amplitude</p>
+                                    <input type="number" class="ampMod" min="0" max="100" step="5">
+
+                                    <p>Frequência</p>
+                                    <select class="myselect">
+                                        <option value="100">3kHz</option>
+                                        <option value="75">4kHz</option>
+                                        <option value="60">5kHz</option>
+                                        <option value="50">6kHz</option>
+                                        <option value="37.5">8kHz</option>
+                                        <option value="30">10kHz</option>
+                                   </select>
+
+                                    <p>Fase</p>
+                                    <input type="number" class="faseMod" min="0" max="360" step="5">
+
+                                </div>
+
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <h2>Sinal Modulado</h2>
+
+                                <canvas class="sinal" width="493.016" height="250"></canvas>
+
+                                <div class="comandos">
+
+                                    <input type="button" class="click" value="Modular">
+                                    <input type="button" class="tela" value="Ver detalhes">
+                                    <input type="text" class="indice" placeholder="Índice de Modulação" readonly="">
+
+                                </div>
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <h2>Sinal da Portadora</h2>
+
+                                <canvas class="portadora" width="493.016" height="250"></canvas>
+
+                                <div class="entradaPort">
+
+                                    <p>Amplitude</p>
+                                    <input type="number" class="ampPort" min="0" max="100" step="5">
+
+                                    <p>Frequência</p>
+                                    <select class="myselect2">
+                                        <option value="16.43333">3MHz</option>
+                                        <option value="12.325">4MHz</option>
+                                        <option value="9.86">5MHz</option>
+                                        <option value="8.21666">6MHz</option>
+                                        <option value="6">10MHz</option>
+                                    </select>
+
+                                    <p>Fase</p>
+                                    <input type="number" class="faseMod" min="0" max="360" step="5">
+
+                                </div>
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <div class="espectro">
+                                    <h2>Espectro B-FSK</h2>
+                                    <canvas class="espec" width="493.016" height="250"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modulos" id="6">
+                            <h1>FM</h1>
+                            <div class='box box-one' style='cursor: default;'>
+
+                                <h2>Sinal Modulante</h2>
+
+                                <canvas class="modulante" width="493.016" height="250"></canvas>
+
+                                <div class="entradaMod">
+
+                                    <p>Amplitude</p>
+                                    <input type="number" class="ampMod" min="0" max="100" step="5">
+
+                                    <p>Frequência</p>
+                                    <select class="myselect">
+                                        <option value="100">3kHz</option>
+                                        <option value="75">4kHz</option>
+                                        <option value="60">5kHz</option>
+                                        <option value="50">6kHz</option>
+                                        <option value="37.5">8kHz</option>
+                                        <option value="30">10kHz</option>
+                                   </select>
+
+                                    <p>Fase</p>
+                                    <input type="number" class="faseMod" min="0" max="360" step="5">
+
+                                </div>
+
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <h2>Sinal Modulado</h2>
+
+                                <canvas class="sinal" width="493.016" height="250"></canvas>
+
+                                <div class="comandos">
+
+                                    <input type="button" class="click" value="Modular">
+                                    <input type="button" class="tela" value="Ver detalhes">
+                                    <input type="text" class="indice" placeholder="Índice de Modulação" readonly="">
+
+                                </div>
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <h2>Sinal da Portadora</h2>
+
+                                <canvas class="portadora" width="493.016" height="250"></canvas>
+
+                                <div class="entradaPort">
+
+                                    <p>Amplitude</p>
+                                    <input type="number" class="ampPort" min="0" max="100" step="5">
+
+                                    <p>Frequência</p>
+                                    <select class="myselect2">
+                                        <option value="16.43333">3MHz</option>
+                                        <option value="12.325">4MHz</option>
+                                        <option value="9.86">5MHz</option>
+                                        <option value="8.21666">6MHz</option>
+                                        <option value="6">10MHz</option>
+                                    </select>
+
+                                    <p>Fase</p>
+                                    <input type="number" class="faseMod" min="0" max="360" step="5">
+
+                                </div>
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <div class="espectro">
+                                    <h2>Espectro FM</h2>
+                                    <canvas class="espec" width="493.016" height="250"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modulos" id="7">
+                            <h1>16QAM</h1>
+                            <div class='box box-one' style='cursor: default;'>
+
+                                <h2>Sinal Modulante</h2>
+
+                                <canvas class="modulante" width="493.016" height="250"></canvas>
+
+                                <div class="entradaMod">
+
+                                    <p>Amplitude</p>
+                                    <input type="number" class="ampMod" min="0" max="100" step="5">
+
+                                    <p>Frequência</p>
+                                    <select class="myselect">
+                                        <option value="100">3kHz</option>
+                                        <option value="75">4kHz</option>
+                                        <option value="60">5kHz</option>
+                                        <option value="50">6kHz</option>
+                                        <option value="37.5">8kHz</option>
+                                        <option value="30">10kHz</option>
+                                   </select>
+
+                                    <p>Fase</p>
+                                    <input type="number" class="faseMod" min="0" max="360" step="5">
+
+                                </div>
+
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <h2>Sinal Modulado</h2>
+
+                                <canvas class="sinal" width="493.016" height="250"></canvas>
+
+                                <div class="comandos">
+
+                                    <input type="button" class="click" value="Modular">
+                                    <input type="button" class="tela" value="Ver detalhes">
+                                    <input type="text" class="indice" placeholder="Índice de Modulação" readonly="">
+
+                                </div>
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <h2>Sinal da Portadora</h2>
+
+                                <canvas class="portadora" width="493.016" height="250"></canvas>
+
+                                <div class="entradaPort">
+
+                                    <p>Amplitude</p>
+                                    <input type="number" class="ampPort" min="0" max="100" step="5">
+
+                                    <p>Frequência</p>
+                                    <select class="myselect2">
+                                        <option value="16.43333">3MHz</option>
+                                        <option value="12.325">4MHz</option>
+                                        <option value="9.86">5MHz</option>
+                                        <option value="8.21666">6MHz</option>
+                                        <option value="6">10MHz</option>
+                                    </select>
+
+                                    <p>Fase</p>
+                                    <input type="number" class="faseMod" min="0" max="360" step="5">
+
+                                </div>
+                            </div>
+
+                            <div class='box box-one' style='cursor: default;'>
+                                <div class="espectro">
+                                    <h2>Constelação 16QAM</h2>
+                                    <canvas class="espec" width="493.016" height="250"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    <div class='box box-two' style='cursor: default;'>
+                        <img src='../../assets/img/icons8-source-code-48.png'>
+                        <div class='information'>
+                            <h2>Simuladores</h2>
+                            <div class='info-nav'>
+                                <button onclick="showModulo('1')">AMDSB</button>
+                                <button onclick="showModulo('2')">AMDSB/SC</button>
+                                <button onclick="showModulo('3')">B-PSK</button>
+                                <button onclick="showModulo('4')">B-ASK</button>
+                                <button onclick="showModulo('5')">B-FSK</button>
+                                <button onclick="showModulo('6')">FM</button>
+                                <button onclick="showModulo('7')">16QAM</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        function showModulo(id) {
+            $('#' + id).show();
+            $(".apres").hide();
+            $('.modulos').not('#' + id).hide();
+        }
+    </script>
+    <script src="../../assets/js/espectro.js"></script>
+    <script src="../../assets/js/modulante.js"></script>
+    <script src="../../assets/js/portadora.js"></script>
+    <script src="../../assets/js/sinal.js"></script>
+</body>
+</html>
+    

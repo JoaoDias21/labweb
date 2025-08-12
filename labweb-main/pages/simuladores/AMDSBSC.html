@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='stylesheet' href='../../assets/css/style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5a9db621cf.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../assets/js/espectro.js"></script>
+    <script src="../../assets/js/modulante.js"></script>
+    <script src="../../assets/js/portadora.js"></script>
+    <script src="../../assets/js/sinal.js"></script>
+    <title>LabWeb</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Início</a>
+            <a href="./pages/recicla/index.html">Recicla</a>
+            <a href="./pages/programacao/index.html">Programação</a>
+            <div class="dropdown">
+                <a>Simuladores</a>
+                <div class="dropdown-content">
+                    <a href="./AMDSB.html">AMDSB</a>
+                    <a href="./AMDSBSC.html">AMDSB/SC</a> 
+                    <a href="./BPSK.html">B-PSK</a> 
+                    <a href="./BASK.html">B-ASK</a> 
+                    <a href="./BFSK.html">B-FSK</a> 
+                    <a href="./FM.html">FM</a> 
+                    <a href="./16QAM.html">16QAM</a>  
+                </div>
+            </div>
+            <a href="./pages/quantica/index.html">Quântica</a>
+            <a href="./pages/fale-conosco/index.html">Fale Conosco</a>
+        </nav>
+    </header>
+    <div class='container'>
+        <section class='topo'>
+            <h1><span>&lt;</span>labweb<span>/&gt;</span></h1>
+        </section>
+        <img id='wave' draggable='false' src='../../assets/img/wave.svg'>
+
+        <section class='labweb'>
+            <div class='sub-labweb'>
+                <h1>AMDSB/SC</h1>
+
+                <div class='simuladores'>
+                            
+                    <div class='box box-one' style='cursor: default;'>
+
+                        <h2>Sinal Modulante</h2>
+
+                        <canvas id="modulante" width="493.016" height="250"></canvas>
+
+                        <div id="entradaMod">
+
+                            <p>Amplitude</p>
+                            <input type="number" id="ampMod" min="0" max="100" step="5">
+
+                            <p>Frequência</p>
+                            <select id="myselect">
+                                <option value="100">3kHz</option>
+                                <option value="75">4kHz</option>
+                                <option value="60">5kHz</option>
+                                <option value="50">6kHz</option>
+                                <option value="37.5">8kHz</option>
+                                <option value="30">10kHz</option>
+                           </select>
+
+                            <p>Fase</p>
+                            <input type="number" id="faseMod" min="0" max="360" step="5">
+
+                        </div>
+
+                    </div>
+
+                    <div class='box box-one' style='cursor: default;'>
+                        <h2>Sinal Modulado</h2>
+
+                        <canvas id="sinal" width="493.016" height="250"></canvas>
+
+                        <div id="comandos">
+
+                            <input type="button" id="click" value="Modular">
+                            <input type="button" id="tela" value="Ver detalhes">
+                            <input type="text" id="indice" placeholder="Índice de Modulação" readonly="">
+
+                        </div>
+                    </div>
+
+                    <div class='box box-one' style='cursor: default;'>
+                        <h2>Sinal da Portadora</h2>
+
+                        <canvas id="portadora" width="493.016" height="250"></canvas>
+
+                        <div id="entradaPort">
+
+                            <p>Amplitude</p>
+                            <input type="number" id="ampPort" min="0" max="100" step="5">
+
+                            <p>Frequência</p>
+                            <select id="myselect2">
+                                <option value="16.43333">3MHz</option>
+                                <option value="12.325">4MHz</option>
+                                <option value="9.86">5MHz</option>
+                                <option value="8.21666">6MHz</option>
+                                <option value="6">10MHz</option>
+                            </select>
+
+                            <p>Fase</p>
+                            <input type="number" id="faseMod" min="0" max="360" step="5">
+
+                        </div>
+                    </div>
+
+                    <div class='box box-one' style='cursor: default;'>
+                        <div id="espectro">
+                            <h2>Espectro AMDSB/SC</h2>
+                            <canvas id="espec" width="493.016" height="250"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>

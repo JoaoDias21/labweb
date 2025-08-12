@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;700&display=swap');
+
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body {
+    background-image: url(../img/sun-tornado.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.topo h1 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 4.6rem;
+    text-shadow: 3px 3px #280cc2, 3px 4px #130466;
+    color: white;
+    cursor: default;
+    letter-spacing: -8px;
+    font-weight: 200;
+    margin-top: 12rem;
+}
+
+.topo h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
+
+.saiba-mais {
+    cursor: pointer;
+    width: 190px;
+}
+
+.saiba-mais-arrow-down {
+    margin-top: 15px;
+    width: 50px;
+    display: flex;
+    justify-content:center;
+}
+
+nav {
+    font-family: 'Roboto Mono', monospace;
+    margin: 40px 15px 15px 15px;
+    font-weight: 300;
+    text-align: center;
+}
+
+nav a {
+    font-size: 1.4rem;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    text-transform: lowercase;
+}
+
+nav a:hover {
+    text-shadow: 3px 3px #280cc2, 3px 4px #130466;
+    transition: all .5s ease; 
+}
+
+.labweb {
+    display: inline-block;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  background: rgb(2,7,80);
+    background: linear-gradient(180deg, rgba(2,7,80,1) 0%, rgba(6,32,153,1) 100%);
+    margin-top: -5px;
+}
+
+.sub-labweb {
+    padding: 5rem;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.labweb .box {
+    margin-bottom: 3rem;
+    max-width: 800px;
+}
+
+.projects {
+    padding: 0 10rem 0 10rem;
+    max-width: 100%;
+    display: grid;
+    column-gap: 5rem;
+}
+
+.simuladores {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5rem; 
+}
+
+.projects .box, .simuladores .box {
+    border: 1px solid white;
+    padding: 2rem;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.simuladores .box {
+    flex: 1;
+    width: 300px;
+}
+
+.download-btn {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.download-btn img {
+    width: 24px;
+}
+
+.modulos {
+    display: none;
+}
+
+.projects .box:hover {
+    background-color: white;
+}
+
+.projects .box .information {
+    transition: 1s;
+}
+
+.projects .box:hover .information {
+    transform: translateY(-20px);
+    color: #0d0053;
+}
+
+.projects .box:hover .information p {
+    font-weight: 400;
+}
+
+.projects .box .information span {
+    display: flex;
+    visibility: hidden;
+    width: fit-content;
+    align-items: center;
+    column-gap: 15px;
+    color: #020c5e;
+    font-weight: 700;
+}
+
+.projects .box:hover .information span {
+    visibility: visible;
+}
+
+.box-zero p {
+    font-size: 2rem;
+}
+
+.box-one {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    
+}
+
+.box-two {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box-four {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.icons {
+    text-align: center;
+}
+
+.fas {
+    font-size: 3rem;
+    color: #0d0053;
+    margin: 0.3rem;
+}
+
+.labweb h1, h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+.labweb h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    text-align: left;
+}
+
+.labweb p {
+    font-weight: 200;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.recicla {
+    display: flex;
+    align-items: center;
+}
+
+.slider-icon {
+    margin: 0;
+    cursor: pointer;
+
+}
+
+.dropdown {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.aula {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+ .titulo {
+    font-size: 16px;
+    height: 30px;
+}
+
+#to-check {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.info-nav button {
+    appearance: none;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #130466;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 3px 3px #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    padding: 12px 16px;
+    z-index: 1;
+    min-width: 160px;
+    background-color: #051663;
+}
+
+.dropdown-content a {
+    font-size: 1rem;
+    width: 100%;
+    color: white;
+    display: flex;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#entradaMod, #entradaPort {
+    display: flex;
+    align-items: flex-start;
+}
+
+#comandos {
+    display: flex;
+}
+
+#comandos input {
+    appearance: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.774);
+    font-family: 'Roboto Mono', monospace;
+    color: #130466;
+    padding: 7px;
+    border-radius: 3px;
+    
+}
+
+#comandos input[type="button"] {
+    cursor: pointer;
+}
