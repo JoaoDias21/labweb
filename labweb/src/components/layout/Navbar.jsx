@@ -4,12 +4,12 @@ import '../../styles/navbar.css';
 export default function Navbar() {
     return (
         <nav className="bar">
-            <a href="#home">início</a>
-            <a href="#home">minicursos</a>
-            <a href="#home">programação</a>
-            <a href="#home">simuladores</a>
-            <a href="#home">quântica</a>
-            <a href="#home">fale conosco</a>
+            <a href="#">início</a>
+            <a href="#">minicursos</a>
+            <a href="#">programação</a>
+            <a href="#">simuladores</a>
+            <a href="#">quântica</a>
+            <a href="#">fale conosco</a>
         </nav>
     )
 }
