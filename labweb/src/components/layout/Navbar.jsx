@@ -1,15 +1,19 @@
 import React from 'react';
 import '../../styles/navbar.css';
+import {
+    Link
+} from "react-router-dom";
 
 export default function Navbar() {
     return (
         <nav className="bar">
-            <a href="#">início</a>
-            <a href="#">minicursos</a>
-            <a href="#">programação</a>
-            <a href="#">simuladores</a>
-            <a href="#">quântica</a>
-            <a href="#">fale conosco</a>
+            <a href="/">Início</a>
+            <a href="/recicla">Recicla</a>
+            <a href="">Programação</a>
+            <a href="">Simuladores</a>
+            <a href="">Quântica</a>
+            <a href="">Fale Conosco</a>
         </nav>
+
     )
 }

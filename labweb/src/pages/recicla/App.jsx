@@ -1,27 +1,15 @@
 
-import './styles/style.css';
-import Navbar from "./components/layout/Navbar.jsx";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Recicla from "./pages/recicla/App.jsx";
-import React from "react";
+import '../../styles/style.css';
+import Navbar from "../../components/layout/Navbar.jsx";
 
-function Home() {
+function Recicla() {
 
   return (
         <div>
-            <div className='nav-div'>
-                <Router>
-                    <Navbar />
-                    <Routes>
-                        <Route path="/recicla" element={<Recicla />} />
-                    </Routes>
-                </Router>
-
-            </div>
 
         <div className="container">
             <div className='content'>
-                <h1 className={"upperText"}>&lt;labweb&#47;&gt;</h1>
+                <h1 className={"upperText"}>&lt;labweb&#47;Recicla&gt;</h1>
             </div>
             <div className='wave'>
                 <img id='wave' draggable='false' src='../public/wave.svg' alt={'Wave'}/>
@@ -61,4 +49,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Recicla
