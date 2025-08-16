@@ -14,10 +14,11 @@ body {
     background-color: #02074f;
 }
 
-.nav-div{
+.nav-div bar{
     position: relative;
     margin: 40px 15px 15px 15px;
     text-align: center;
+    text-transform: lowercase;
 }
 
 
@@ -144,4 +145,32 @@ body {
     margin-bottom: 3rem;
     grid-column-start: 1;
     grid-column-end: 4;
+}
+
+.download-btn {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.info-nav button {
+    appearance: none;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #130466;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 3px 3px #fff;
 }
