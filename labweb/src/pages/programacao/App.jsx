@@ -1,6 +1,7 @@
 
 import '../../styles/style.css';
 import React from "react";
+import LearnMore from "../../components/layout/LearnMoreSpan.jsx"
 
 function Programacao() {
 
@@ -26,23 +27,26 @@ function Programacao() {
                     <button className="download-btn"><img src="/icons8-baixar-64.png"/>Baixar apostila</button>
                 </div>
                 <div className='projects-box'>
-                    <div className='box1'>
+                    <div className='box box-one'>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/PH5JixVAuRs?controls=0"
-                                title="YouTube video player" frameborder="0"
+                                title="YouTube video player" frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen=""></iframe>
+                                allowFullScreen=""></iframe>
+
                     </div>
-                    <div className='box2'>
+                    <div className='box box-two'>
                         <img src='/icons8-source-code-48.png'/>
-                        <h2>Programação Web</h2>
-                        <div className="info-nav">
-                            <button onClick="showModulo('1')">Módulo 1</button>
-                            <button onClick="showModulo('2')">Módulo 2</button>
-                            <button onClick="showModulo('3')">Módulo 3</button>
-                            <button onClick="showModulo('4')">Módulo 4</button>
-                            <button onClick="showModulo('5')">Módulo 5</button>
-                            <button onClick="showModulo('6')">Módulo 6</button>
-                            <button onClick="showModulo('7')">Módulo 7</button>
+                        <div className="information">
+                            <h2>Programação Web</h2>
+                            <div className="info-nav">
+                                <button onClick="showModulo('1')">Módulo 1</button>
+                                <button onClick="showModulo('2')">Módulo 2</button>
+                                <button onClick="showModulo('3')">Módulo 3</button>
+                                <button onClick="showModulo('4')">Módulo 4</button>
+                                <button onClick="showModulo('5')">Módulo 5</button>
+                                <button onClick="showModulo('6')">Módulo 6</button>
+                                <button onClick="showModulo('7')">Módulo 7</button>
+                            </div>
                         </div>
 
                     </div>

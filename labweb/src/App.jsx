@@ -6,7 +6,7 @@ import Home from "./pages/home/App.jsx";
 import React from "react";
 import Programacao from "./pages/programacao/App.jsx";
 import Quantica from "./pages/quantica/App.jsx";
-import FaleConosco from "./pages/fale-conosco/App.jsx";
+import FaleConosco from "./pages/forum/App.jsx";
 import Simulacoes from "./pages/simulacoes/App.jsx";
 
 function App() {

@@ -21,6 +21,10 @@ body {
     text-transform: lowercase;
 }
 
+.nav-div a:hover {
+    text-shadow: 3px 3px #280cc2, 3px 4px #130466;
+    transition: all .5s ease;
+}
 
 .upperText {
     font-family: 'Roboto Mono', monospace;
@@ -102,15 +106,61 @@ body {
     text-align: justify;
 }
 
-.box1{
+.box{
     border: 1px solid white;
     padding: 2rem;
     font-size: 14px;
     cursor: pointer;
     transition: 1s;
     margin-bottom: 3rem;
+    max-width: 800px;
+}
+
+.box .information {
+    transition: 1s;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.box .information span{
+    display: flex;
+    visibility: hidden;
+    width: fit-content;
+    align-items: center;
+    column-gap: 15px;
+    color: #020c5e;
+    font-weight: 700;
+}
+
+.box:hover{
+    background-color: white;
+}
+
+.box:hover .information span{
+    visibility: visible;
+}
+
+.box:hover .information{
+    transform: translateY(-20px);
+    color: #0d0053;
+}
+
+.box-one {
     grid-column-start: 1;
     grid-column-end: 1;
+
+}
+
+.box-two {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box-four {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 .box2{
