@@ -1,4 +1,3 @@
-
 import './styles/style.css';
 import Navbar from "./components/layout/Navbar.jsx";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -7,6 +6,8 @@ import Home from "./pages/home/App.jsx";
 import React from "react";
 import Programacao from "./pages/programacao/App.jsx";
 import Quantica from "./pages/quantica/App.jsx";
+import FaleConosco from "./pages/fale-conosco/App.jsx";
+import Simulacoes from "./pages/simulacoes/App.jsx";
 
 function App() {
 
@@ -20,7 +21,9 @@ function App() {
                             <Route path="/" element={<Home />} />
                             <Route path="/recicla" element={<Recicla />} />
                             <Route path="/programacao" element={<Programacao />} />
+                            <Route path="/simulacoes" element={<Simulacoes />} />
                             <Route path="/quantica" element={<Quantica />} />
+                            <Route path="/fale-conosco" element={<FaleConosco />} />
                         </Routes>
                     </Router>
 

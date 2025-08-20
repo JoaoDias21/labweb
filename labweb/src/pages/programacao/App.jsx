@@ -11,7 +11,7 @@ function Programacao() {
                 <h1 className={"upperText"}>&lt;labweb&#47;Programação&gt;</h1>
             </div>
             <div className='wave'>
-                <img id='wave' draggable='false' src='../../../public/wave.svg' alt={'Wave'}/>
+                <img id='wave' draggable='false' src='/wave.svg' alt={'Wave'}/>
             </div>
             <div className='secondBack'>
                 <div className='info'>
@@ -23,7 +23,7 @@ function Programacao() {
                         como auxílio para o acompanhamento da apostila. É importante que cada vídeo aula seja assistida
                         com paciência clique aqui e em conjunto com a prática. As vídeos aulas não são conteúdo próprio
                         e nem excluisivo, sendo apenas referências de outro produtor.</p>
-                    <button className="download-btn"><img src="../../../public/icons8-baixar-64.png"/>Baixar apostila</button>
+                    <button className="download-btn"><img src="/icons8-baixar-64.png"/>Baixar apostila</button>
                 </div>
                 <div className='projects-box'>
                     <div className='box1'>
@@ -33,7 +33,7 @@ function Programacao() {
                                 allowfullscreen=""></iframe>
                     </div>
                     <div className='box2'>
-                        <img src='../public/icons8-source-code-48.png'/>
+                        <img src='/icons8-source-code-48.png'/>
                         <h2>Programação Web</h2>
                         <div className="info-nav">
                             <button onClick="showModulo('1')">Módulo 1</button>
