@@ -224,3 +224,8 @@ body {
     font-family: 'Roboto Mono', monospace;
     box-shadow: 3px 3px #fff;
 }
+
+.sphereContainer{
+    height: 100vh;
+    padding: 2rem 18rem;
+}
