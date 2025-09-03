@@ -67,7 +67,7 @@ function Recicla() {
                         <div className="information">
                             <h2>Apostila 2019</h2>
                             <iframe src="/Apostila_2019.pdf">Carregando...</iframe>
-                            <a href="/Apostila_2019.pdf"  download="Apostila_2019.pdf">Download PDF</a>
+                            <a href="/Apostila_2019.pdf" download="Apostila_2019.pdf">Download PDF</a>
                             <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                        width="24" height="24"
                                        viewBox="0 0 172 172"
