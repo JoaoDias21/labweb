@@ -229,3 +229,24 @@ body {
     height: 100vh;
     padding: 2rem 18rem;
 }
+
+.XGateButton{
+    background-color: darkred;
+    border-radius: 0.125rem;
+    padding: 0.25rem;
+    margin: 0.75rem;
+}
+
+.YGateButton{
+    background-color: burlywood;
+    border-radius: 0.125rem;
+    padding: 0.25rem;
+    margin: 0.75rem;
+}
+
+.ZGateButton{
+    background-color: purple;
+    border-radius: 0.125rem;
+    padding: 0.25rem;
+    margin: 0.75rem;
+}

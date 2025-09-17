@@ -1,12 +1,13 @@
-
 import '../../styles/style.css';
-import React from "react";
+import React, {useState} from "react";
 import {Canvas} from "@react-three/fiber";
-import {OrbitControls} from "@react-three/drei";
+import {OrbitControls, Text} from "@react-three/drei";
+import BlochSphere from "../../components/simulator/BlochSphere.jsx";
+import * as THREE from "three";
 
-function Recicla() {
-
-  return (
+function Simulacoes() {
+    const [direction, setDirection] = useState(new THREE.Vector3(0,1,0).normalize());
+    return (
         <div>
         <div className="container">
             <div className='content'>
@@ -20,23 +21,23 @@ function Recicla() {
                     <h1>Simule operações de portas quânticas com uma Esfera de Bloch</h1>
                 </div>
                 <div className='sphereContainer'>
-                    <Canvas camera={{position:[3,2,3], fov:45}}>
+                    <button className='XGateButton' onClick={() => {setDirection(new THREE.Vector3(direction.x, -direction.y, direction.z))}}>X</button>
+                    <button className='YGateButton' onClick={() => {setDirection(new THREE.Vector3(-direction.x, direction.y, direction.z))}}>Y</button>
+                    <button className='ZGateButton' onClick={() => {setDirection(new THREE.Vector3(direction.x, direction.y, -direction.z))}}>Z</button>
+                    <Canvas camera={{position:[5,0,0], fov:45}}>
+                        <Text position={[0,1.5,0]} scale={[0.5, 0.5, 0.5]} rotation={[0,Math.PI/2,0]}>|0&#10217;</Text>
+                        <Text position={[0,-1.5,0]} scale={[0.5, 0.5, 0.5]} rotation={[0,Math.PI/2,0]}>|1&#10217;</Text>
                         <OrbitControls />
-                        <ambientLight intensity={0.2}></ambientLight>
+                        <ambientLight intensity={3}></ambientLight>
                         <directionalLight insensity={3} position={[2, 5, 1]}></directionalLight>
-                        <mesh position={[0,0,0]}>
-                            <sphereGeometry args={[1, 32, 32]}></sphereGeometry>
-                            <meshStandardMaterial color="white" transparent={true} opacity={0.9} roughness={0.3}></meshStandardMaterial>
-                        </mesh>
+                        <BlochSphere dir={direction}/>
                     </Canvas>
                 </div>
-
-
             </div>
         </div>
         </div>
 
-  )
+    )
 }
 
-export default Recicla
+export default Simulacoes
