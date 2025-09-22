@@ -1,0 +1,14 @@
+.bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+
+
+}
+
+.bar a{
+    margin: 32px 15px 15px 15px;
+    color: white;
+    font-size: 1.4rem;
+}
