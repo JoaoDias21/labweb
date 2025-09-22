@@ -227,7 +227,7 @@ body {
 
 .sphereContainer{
     height: 100vh;
-    padding: 2rem 18rem;
+    padding: 4rem 18rem;
 }
 
 .XGateButton{
@@ -246,6 +246,13 @@ body {
 
 .ZGateButton{
     background-color: purple;
+    border-radius: 0.125rem;
+    padding: 0.25rem;
+    margin: 0.75rem;
+}
+
+.HGateButton{
+    background-color: orangered;
     border-radius: 0.125rem;
     padding: 0.25rem;
     margin: 0.75rem;

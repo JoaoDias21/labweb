@@ -1,15 +1,14 @@
-
 import '../../styles/style.css';
 import React from "react";
 import LearnMore from "../../components/layout/LearnMoreSpan.jsx"
 
-function Programacao() {
+function Education() {
 
   return (
         <div>
         <div className="container">
             <div className='content'>
-                <h1 className={"upperText"}>&lt;labweb&#47;Programação&gt;</h1>
+                <h1 className={"upperText"}>&lt;labweb&#47;Formação&gt;</h1>
             </div>
             <div className='wave'>
                 <img id='wave' draggable='false' src='/wave.svg' alt={'Wave'}/>
@@ -58,4 +57,4 @@ function Programacao() {
   )
 }
 
-export default Programacao
+export default Education

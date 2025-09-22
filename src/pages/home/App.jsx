@@ -1,6 +1,6 @@
-
 import '../../styles/style.css';
 import React from "react";
+import LearnMore from "../../components/layout/LearnMoreSpan.jsx";
 
 function Home() {
 
@@ -8,7 +8,7 @@ function Home() {
         <div>
             <div className="container">
              <div className='content'>
-                    <h1 className={"upperText"}>&lt;labweb&#47;&gt;</h1>
+                    <h1 className={"upperText"}>&lt;labweb&#47;Quântica&gt;</h1>
                 </div>
                 <div className='wave'>
                    <img id='wave' draggable='false' src='/wave.svg' alt={'Wave'}/>
@@ -16,55 +16,74 @@ function Home() {
              <div className='secondBack'>
                   <div className='info'>
                         <h1>O que é o LabWeb ?</h1>
-                        <p>A página LabWeb tem como objetivo integrar projetos: Recicla Eletrônicos, Programação Web e Simuladores de Sistemas de Comunicações são alguns exemplos de programas de extensão que, em conjunto com a instituição federal CEFET/RJ, foram elaborados de forma a instruir conhecimento em diversas áreas da tecnologia.</p>
+                        <p>O labweb&#47;Quântica é um projeto de divulgação científica sobre computação e comunicações quânticas, aqui você terá acesso a várias ferramentas de aprendizagem, pesquisa e simulações quânticas!</p>
                    </div>
-                   <div className='projects-box'>
-                       <div className='box box-one'>
-                           <img src='/icons8-recycle-48.png'/>
-                           <div className="information">
-                               <h2>Recicla Eletrônicos</h2>
-                               <p>Visa o reaproveitamento de componentes eletrônicos para gerar um lucro maior com a revenda.</p>
-                               <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                          width="24" height="24"
-                                          viewBox="0 0 172 172"
-                                          style={{fill:"#000000"}}><g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{mixBlendMode: "normal"}}><path d="M0,172v-172h172v172z" fill="none" /><g fill="#020c5e"><path d="M86,14.33333c-39.5815,0 -71.66667,32.08517 -71.66667,71.66667c0,39.5815 32.08517,71.66667 71.66667,71.66667c39.5815,0 71.66667,-32.08517 71.66667,-71.66667c0,-39.5815 -32.08517,-71.66667 -71.66667,-71.66667zM93.16667,121.83333h-14.33333v-43h14.33333zM93.16667,64.5h-14.33333v-14.33333h14.33333z" /></g></g></svg>Saiba mais</span>
-                           </div>
-                        </div>
-                        <div className='box box-two'>
+                 <div className='projects-box'>
+                     <div className='box box-one'>
+                         <img src='/icons8-recycle-48.png'/>
+                         <div className="information">
+                             <h2>O que é o bit quântico?</h2>
+                             <p>O funcionamento dos computadores atuais é baseado em um sistema binário de 0 e 1. Com uma sequência deles (chamados bits), a máquina tem
+                                 a capacidade de realizar as mais diversas operações, das simples para as mais complexas. Como o próprio nome diz, o sistema é binário: O bit hora é
+                                 0, hora ele é 1. Não há meio termo.</p>
+                             <p> O bit quântico, ou qubit, utiliza-se da teoria quântica para o seu modo de funcionamento. Um qubit, antes de ser medido, pode assumir valores 0 e 1, mas também ele pode estar em uma
+                                 superposição de valores 0 e 1. Em outras palavras, ele encontra-se no estado 0 e no estado 1 ao mesmo tempo.</p>
+                             <p> Pense no qubit como uma moeda girando no escuro, aonde queremos encontrar "cara" ou "coroa", e a ferramenta utilizada para definirmos seu estado é a nossa mão, fazendo-a parar.
+                                 Aqui vale ressaltar que um qubit, após ser medido, assumirá os mesmos valores que o bit clássico (ou 0 ou 1), mas, antes de colapsar em um destes resultados, estará em uma superposição
+                                 de estados 0 e 1, onde a propabilidade do resultado ser um ou outro depende da posição da moeda no espaço.</p>
+                             <p> Conside a seguinte notação abaixo:</p>
+                             <p> q = a|0&gt; + b|1&gt;</p>
+                             <p>Onde a e b seriam, de maneira grosseira, as probabilidades do qubit colapsar nos valores 0 e 1, respectivamente.</p>
+                             <LearnMore/>
+                         </div>
+
+                     </div>
+                     <div className='box box-two'>
                          <img src='/icons8-source-code-48.png'/>
                          <div className="information">
-                             <h2>Programação Web</h2>
-                             <p>Ensino de programação web em forma de minicurso. Os monitores desse projeto, em conjunto com o professor João Dias, ministraram minicursos em turmas pilotos em parceria com a ONG Redes da Maré, para disseminarmos o estudo de programação web, utilizando as linguagens de programação: HTML, CSS e JavaScript. Os objetivos do projeto são estimular o uso de tecnologias de informação e comunicação como recurso em processos educacionais.</p>
-                             <p>O projeto, que até então vinha se desenvolvendo na coordenação de Telecomunicações e Segurança do Trabalho, devido à pandemia de Covid-19, está sendo realizado virtualmente pelos alunos do ensino médio técnico: Bernardo Aragão, Gabriela Cruz, Iasmin Rosa e Júlia Leão.</p>
-                             <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                        width="24" height="24"
-                                        viewBox="0 0 172 172"
-                                        style={{fill:"#000000"}}><g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{mixBlendMode: "normal"}}><path d="M0,172v-172h172v172z" fill="none" /><g fill="#020c5e"><path d="M86,14.33333c-39.5815,0 -71.66667,32.08517 -71.66667,71.66667c0,39.5815 32.08517,71.66667 71.66667,71.66667c39.5815,0 71.66667,-32.08517 71.66667,-71.66667c0,-39.5815 -32.08517,-71.66667 -71.66667,-71.66667zM93.16667,121.83333h-14.33333v-43h14.33333zM93.16667,64.5h-14.33333v-14.33333h14.33333z" /></g></g></svg>Saiba mais</span>
+                             <h2>Quais as vantagens de tecnologias que utilizam de qubits?</h2>
+                             <p> Tomemos como exemplo, a criptografia de segurança de um banco, onde para "abrirmos" este
+                                 cadeado, precisamos decompor um certo número N em seus fatores primos. Por exemplo, o número
+                                 15, nós
+                                 sabemos que ele pode ser fatorado em números primos como 15 = 3 x 5. Fácil, não? Porém,
+                                 imagine um número aleatório 23487611208876832831780438. Um computador clássico resolveria
+                                 esse problema por tentativa
+                                 e erro, algo que levaria anos para solucionar.</p>
+                             <p>A física quântica, junto dos qubits, vem para solucionar isso. A superposição de estados dos
+                                 qubits aumentaria a eficiência da descriptografia do código exponencialmente,
+                                 resolvendo o problema em questão em minutos. Tais computadores ainda são mais teóricos do
+                                 que práticos, mas existem diversos algoritmos feitos no modelo clássico que simulam o
+                                 ambiente quântico, e vem ao longo
+                                 dos tempos reproduzindo resultados satisfatórios. Como já mencionamos na nossa introdução,
+                                 nosso objetivo é apresentar tais algoritmos e mergulharmos a sociedade no novo tipo de
+                                 tecnologia que está por vir.</p>
+                             <h2>Comparação bit clássico com qubit</h2>
+                             <img src="/bitqubit.png"/>
+                             <LearnMore/>
                          </div>
-                        </div>
-                        <div className='box'>
+
+                     </div>
+                     <div className='box'>
                          <img src='/icons8-radio-tower-48.png'/>
                          <div className="information">
-                             <h2>Simuladores de Sistemas de Telecomunicações</h2>
-                             <p>Tem como finalidade desenvolver uma ferramenta de simulação computacional para apoio didático ao ensino.</p>
-                             <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                        width="24" height="24"
-                                        viewBox="0 0 172 172"
-                                        style={{fill:"#000000"}}><g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{mixBlendMode: "normal"}}><path d="M0,172v-172h172v172z" fill="none" /><g fill="#020c5e"><path d="M86,14.33333c-39.5815,0 -71.66667,32.08517 -71.66667,71.66667c0,39.5815 32.08517,71.66667 71.66667,71.66667c39.5815,0 71.66667,-32.08517 71.66667,-71.66667c0,-39.5815 -32.08517,-71.66667 -71.66667,-71.66667zM93.16667,121.83333h-14.33333v-43h14.33333zM93.16667,64.5h-14.33333v-14.33333h14.33333z" /></g></g></svg>Saiba mais</span>
+                             <h2>Minicurso SEPEX 2021</h2>
+                             <iframe src="/Minicurso_SEPEX_2021.pdf">Carregando…</iframe>
+                             <LearnMore/>
                          </div>
-                        </div>
-                       <div className='box box-four'>
-                           <img src='/icons8-physics-48.png'/>
-                           <div className="information">
-                            <h2>Comunicações Quânticas</h2>
-                            <p>Propiciar ao leitor um maior contato com as teorias das comunicações e mecânica quântica.</p>
-                               <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                          width="24" height="24"
-                                          viewBox="0 0 172 172"
-                                          style={{fill:"#000000"}}><g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{mixBlendMode: "normal"}}><path d="M0,172v-172h172v172z" fill="none" /><g fill="#020c5e"><path d="M86,14.33333c-39.5815,0 -71.66667,32.08517 -71.66667,71.66667c0,39.5815 32.08517,71.66667 71.66667,71.66667c39.5815,0 71.66667,-32.08517 71.66667,-71.66667c0,-39.5815 -32.08517,-71.66667 -71.66667,-71.66667zM93.16667,121.83333h-14.33333v-43h14.33333zM93.16667,64.5h-14.33333v-14.33333h14.33333z" /></g></g></svg>Saiba mais</span>
-                           </div>
-                       </div>
-                  </div>
+
+
+                     </div>
+                     <div className='box box-four'>
+                         <img src='/icons8-physics-48.png'/>
+                         <div className="information">
+                             <h2>Equipe do Projeto</h2>
+                             <p>Este projeto está em desenvolvimento no CEFET-RJ, com participação dos alunos: Antônio Víctor Basilio (Bolsista PIBIC-2020), Daniel Coutinho (Bolsista PIBIC-2021)
+                                 José Victor (Bolsista Jovens Talentos-2021), José Antônio (Doutorando - PPGIO) e orientado pelos professores João Dias (Cefet_Maracanã), Demerson Nunes (Cefet_Petrópolis) e Edinelço Dalcumune (UFVJM).</p>
+                             <LearnMore/>
+                         </div>
+
+                     </div>
+                 </div>
                 </div>
             </div>
         </div>

@@ -6,10 +6,9 @@ export default function Navbar() {
     return (
         <nav className="bar">
             <Link to="/">Início</Link>
-            <Link to="/recicla">Recicla</Link>
-            <Link to="/programacao">Programação</Link>
-            <Link to="/simulacoes">Simulações</Link>
-            <Link to="/quantica">Quântica</Link>
+            <Link to="/formacao">Formação</Link>
+            <Link to="/simulador">Simulador</Link>
+            <Link to="/noticias">Notícias</Link>
             <Link to="/fale-conosco">Fale Conosco</Link>
         </nav>
 

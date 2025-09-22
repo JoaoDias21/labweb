@@ -1,15 +1,14 @@
-
 import '../../styles/style.css';
 import React from "react";
 import LearnMore from "../../components/layout/LearnMoreSpan.jsx"
 
-function Quantica() {
+function News() {
 
   return (
         <div>
         <div className="container">
             <div className='content'>
-                <h1 className={"upperText"}>&lt;labweb&#47;Quântica&gt;</h1>
+                <h1 className={"upperText"}>&lt;labweb&#47;Notícias&gt;</h1>
             </div>
             <div className='wave'>
                 <img id='wave' draggable='false' src='/wave.svg' alt={'Wave'}/>
@@ -101,4 +100,4 @@ function Quantica() {
   )
 }
 
-export default Quantica
+export default News
