@@ -120,6 +120,21 @@ body {
     transition: 1s;
     font-size: 14px;
     cursor: pointer;
+    justify-content: center;
+    text-align: center;
+}
+
+.box .information h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.box .information h2 {
+    text-align: center;
+}
+
+.box .information h2:hover {
+    transform: scale(1.1);
 }
 
 .box .information span{
@@ -147,11 +162,24 @@ body {
 
 .box-one {
     grid-column-start: 1;
-    grid-column-end: 1;
-
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .box-two {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box-miniCourse {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.box-courseSelection{
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -201,14 +229,26 @@ body {
     appearance: none;
     background-color: transparent;
     border: 1px solid #fff;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
     cursor: pointer;
     font-family: 'Roboto Mono', monospace;
     color: white;
     width: 200px;
     display: flex;
     align-items: center;
-    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.download-btn:hover {
+    background-color: white;
+    color: #130466;
+    transform: scale(1.1);
+    font-size: 110%;
 }
 
 .info-nav button {
@@ -223,6 +263,14 @@ body {
     text-transform: uppercase;
     font-family: 'Roboto Mono', monospace;
     box-shadow: 3px 3px #fff;
+}
+
+.info-nav button:hover {
+    transform: scale(1.2);
+}
+
+.info-nav button:active {
+    background-color: #2a0ba8;
 }
 
 .sphereContainer{
@@ -256,4 +304,8 @@ body {
     border-radius: 0.125rem;
     padding: 0.25rem;
     margin: 0.75rem;
+}
+
+.info h1{
+    margin-bottom: 3rem;
 }
