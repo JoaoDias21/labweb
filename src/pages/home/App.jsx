@@ -14,7 +14,9 @@ function Home() {
                    <img id='wave' draggable='false' src='/wave.svg' alt={'Wave'}/>
                 </div>
              <div className='secondBack'>
+
                   <div className='info'>
+                      <h1>Bem vindo a área de comunicações quânticas do projeto LabWeb.</h1>
                         <h1>O que é o LabWeb ?</h1>
                         <p>O labweb&#47;Quântica é um projeto de divulgação científica sobre computação e comunicações quânticas, aqui você terá acesso a várias ferramentas de aprendizagem, pesquisa e simulações quânticas!</p>
                    </div>
@@ -63,16 +65,7 @@ function Home() {
                          </div>
 
                      </div>
-                     <div className='box'>
-                         <img src='/icons8-radio-tower-48.png'/>
-                         <div className="information">
-                             <h2>Minicurso SEPEX 2021</h2>
-                             <iframe src="/Minicurso_SEPEX_2021.pdf">Carregando…</iframe>
-                             <LearnMore/>
-                         </div>
 
-
-                     </div>
                      <div className='box box-four'>
                          <img src='/icons8-physics-48.png'/>
                          <div className="information">
