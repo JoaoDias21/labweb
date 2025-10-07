@@ -70,8 +70,7 @@ function Home() {
                          <img src='/icons8-physics-48.png'/>
                          <div className="information">
                              <h2>Equipe do Projeto</h2>
-                             <p>Este projeto está em desenvolvimento no CEFET-RJ, com participação dos alunos: Antônio Víctor Basilio (Bolsista PIBIC-2020), Daniel Coutinho (Bolsista PIBIC-2021)
-                                 José Victor (Bolsista Jovens Talentos-2021), José Antônio (Doutorando - PPGIO) e orientado pelos professores João Dias (Cefet_Maracanã), Demerson Nunes (Cefet_Petrópolis) e Edinelço Dalcumune (UFVJM).</p>
+                             <p>Este projeto está em desenvolvimento no CEFET-RJ, com participação dos alunos: Rafael Goldfeld (Bolsista PIBIC-EM 2025), Geann Bittencourt (Cefet_Maracanã) e orientado pelo professor João Dias (Cefet_Maracanã)</p>
                              <LearnMore/>
                          </div>
 

@@ -87,19 +87,8 @@ function Education() {
                 </div>
                 <div className='secondBack'>
                     <div className='info'>
-                        <h1>Módulos de Programação Web</h1>
-                        <p>No LabWeb, você pode dar seus primeiros passos em programação de forma prática e acessível.
-                            Durante os módulos de programação ministrados nas aulas a seguir, o aluno encontrará
-                            conceitos
-                            sobre desenvolvimento web e as tecnologias do HTML, CSS e Javascript.</p>
-                        <p>O acompanhamento do curso pode ser feito pela navegação do menu lateral. As vídeos aulas
-                            servem
-                            como auxílio para o acompanhamento da apostila. É importante que cada vídeo aula seja
-                            assistida
-                            com paciência clique aqui e em conjunto com a prática. As vídeos aulas não são conteúdo
-                            próprio
-                            e nem excluisivo, sendo apenas referências de outro produtor.</p>
-
+                        <h1>Trilhas formativas Labweb/Quântica</h1>
+                        <p>No LabWeb/Quântica, você pode dar seus primeiros passos em computação quântica de forma prática e acessível. Aqui você encontrará minicursos, palestras e materiais em PDF para auxiliar no aprendizado de computação quântica. Bons estudos!</p>
                     </div>
                     <div className='projects-box'>
                         <div className='box box-miniCourse'>
