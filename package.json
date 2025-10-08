@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "./node_modules/.bin/vite",
-    "build": "labweb/node_modules/.bin/vite build",
+    "build": "./node_modules/.bin/vite build",
     "lint": "labweb/node_modules/.bin/eslint .",
     "preview": "labweb/node_modules/.bin/vite preview"
   },
