@@ -1,10 +1,12 @@
 import '../../styles/style.css';
 import React, {useState} from "react";
 import {Canvas} from "@react-three/fiber";
-import {OrbitControls, Text} from "@react-three/drei";
+import {OrbitControls, Text, Billboard} from "@react-three/drei";
 import BlochSphere from "../../components/simulator/BlochSphere.jsx";
 import * as THREE from "three";
 import {X_gate, Y_gate, Z_gate, H_gate} from "./qubitRotation.js"
+import FacedTxt from '../../components/simulator/facedText.jsx';
+
 
 function Simulator() {
     const [direction, setDirection] = useState(new THREE.Vector3(0,1,0).normalize());
@@ -27,10 +29,10 @@ function Simulator() {
                     <button className='ZGateButton' onClick={() => Z_gate(setDirection, direction)}>Z</button>
                     <button className='HGateButton' onClick={() => H_gate(setDirection, direction)}>H</button>
                     <Canvas camera={{position:[3,2,4], fov:45}}>
-                        <Text position={[0,1.5,0]} scale={[0.5, 0.5, 0.5]} rotation={[0,Math.PI/5,0]}>|0&#10217;</Text>
-                        <Text position={[0,-1.5,0]} scale={[0.5, 0.5, 0.5]} rotation={[0,Math.PI/5,0]}>|1&#10217;</Text>
-                        <Text position={[0,0,1.3]} scale={[0.5, 0.5, 0.5]} rotation={[0,Math.PI/5,0]}>X</Text>
-                        <Text position={[1.3,0,0]} scale={[0.5, 0.5, 0.5]} rotation={[0,Math.PI/5,0]}>Y</Text>
+                        <FacedTxt Position={[0,1.5,0]} Content={"|0>"}></FacedTxt>
+                        <FacedTxt Position={[0,-1.5,0]} Content={"|1>"}></FacedTxt>
+                        <FacedTxt Position={[-1.3,0,0]} Content={"X"}></FacedTxt>
+                        <FacedTxt Position={[1.3,0,0]} Content={"Y"}></FacedTxt>                       
                         <OrbitControls />
                         <ambientLight intensity={3}></ambientLight>
                         <directionalLight insensity={3} position={[2, 5, 1]}></directionalLight>
