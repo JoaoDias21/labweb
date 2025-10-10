@@ -76,7 +76,7 @@ body {
     height: 100vh;
     width: 100vw;
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 6vw;
     flex: 1;
 }
 
@@ -96,32 +96,81 @@ body {
 
 .secondBack p{
     font-weight: 200;
-    margin-bottom: 1rem;
+    margin-bottom: 1vw;
     text-align: justify;
 }
 
 .info{
-    padding: 2rem 18rem;
+    padding: 2vw 15vw;
     text-align: center;
     align-items: center;
 }
 
 .projects-box {
-    display: grid;
-    column-gap: 5rem;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 15rem;
+    display: flex;
+    column-gap: 5vw;
+    padding: 0 15vw;
     text-align: justify;
+    flex-direction: column;
+
+}
+
+@media (max-width: 900px) {
+    .tbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .education-box{
+        padding: 0;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .sphereContainer{
+        height: 100%;
+        padding: 2vw 10vw;
+    }
+
+}
+
+@media (min-width: 901px) {
+    .tbox{
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+    }
+    .educationBox{
+        display: flex;
+        flex-direction: row;
+        padding: 0 15vw;
+        gap: 5vw;
+    }
+
+    .sphereContainer{
+        height: 100%;
+        padding: 4vw 18vw;
+    }
+
+}
+
+
+
+.hbox{
+    display: flex;
 }
 
 .box{
     border: 1px solid white;
-    padding: 2rem;
+    padding: 2vw;
     font-size: 14px;
     cursor: pointer;
     transition: 1s;
     margin-bottom: 3rem;
     max-width: 800px;
+}
+
+.box .qubitImg img{
+    width: 100%;
 }
 
 .box .information {
@@ -133,8 +182,8 @@ body {
 }
 
 .box .information h3 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
 }
 
 .box .information h2 {
@@ -168,31 +217,18 @@ body {
     color: #0d0053;
 }
 
-.box-one {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+.educationContent{
+    display: flex;
+    flex-direction: column;
+    order: 1;
 }
 
-.box-two {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
+.selectBar{
+    display: flex;
+    order: 2;
 }
 
-.box-miniCourse {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
 
-.box-courseSelection{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
 
 .box-four {
     grid-column-start: 1;
@@ -281,10 +317,7 @@ body {
     background-color: #2a0ba8;
 }
 
-.sphereContainer{
-    height: 100vh;
-    padding: 4rem 18rem;
-}
+
 
 .XGateButton{
     background-color: darkred;

@@ -90,53 +90,61 @@ function Education() {
                         <h1>Trilhas formativas Labweb/Quântica</h1>
                         <p>No LabWeb/Quântica, você pode dar seus primeiros passos em computação quântica de forma prática e acessível. Aqui você encontrará minicursos, palestras e materiais em PDF para auxiliar no aprendizado de computação quântica. Bons estudos!</p>
                     </div>
-                    <div className='projects-box'>
-                        <div className='box box-miniCourse'>
-                            <div hidden={isVideo} className="information">
-                                <h2>{courseTitle}</h2>
-                                <iframe width="600" height="400" src={selectedCourse}>Carregando…</iframe>
-                                <LearnMore/>
-                            </div>
-                            <div hidden={!isVideo} className="information">
-                                <h2>{courseTitle}</h2>
-                                <iframe hidden={!isVideo} width="720" height="405" src={selectedCourse}
-                                        title="Minicurso - Internet Quântica - parte 1" frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        referrerPolicy="strict-origin-when-cross-origin"
-                                        allowFullScreen></iframe>
-                                <LearnMore/>
-                            </div>
 
-                        </div>
-                        <div hidden={isVideo}>
-                            <button className="download-btn" onClick={downloadCoursePdf} onMouseEnter={downloadBtnHover}
-                                    onMouseLeave={downloadBtnHover}><img src={downloadBtnImage}/>Baixar PDF
-                            </button>
-                        </div>
-                        <div hidden={!isVideo}>
-                            <button className="download-btn" onClick={otherVideoPart} onMouseEnter={downloadBtnHover}
-                                    onMouseLeave={downloadBtnHover}>{part}
-                            </button>
-                        </div>
+                    <div className='educationBox'>
 
-                        <div className='box box-courseSelection'>
-                            <img src='/icons8-source-code-48.png'/>
-                            <div className="information">
-                                <h2>Trilhas formativas</h2>
-                                <h3>Minicursos WECIQ 2024</h3>
-                                <div className="info-nav">
-                                    <button onClick={showMinicursoWECIQ_1}>Minicurso de Códigos Quânticos</button>
-                                    <button onClick={showMinicursoWECIQ_2}>Minicurso de Internet Quântica</button>
+                        <div className='selectBar'>
+                            <div className='box box-courseSelection'>
+                                <img src='/icons8-source-code-48.png'/>
+                                <div className="information">
+                                    <h2>Trilhas formativas</h2>
+                                    <h3>Minicursos WECIQ 2024</h3>
+                                    <div className="info-nav">
+                                        <button onClick={showMinicursoWECIQ_1}>Minicurso de Códigos Quânticos</button>
+                                        <button onClick={showMinicursoWECIQ_2}>Minicurso de Internet Quântica</button>
+                                    </div>
+                                    <h3>Minicursos SEPEX</h3>
+                                    <div className="info-nav">
+                                        <button onClick={showMinicursoSEPEX_1}>Minicurso 2021/2022</button>
+                                        <button onClick={showMinicursoSEPEX_2}>Minicurso 2023/2024</button>
+                                    </div>
                                 </div>
-                                <h3>Minicursos SEPEX</h3>
-                                <div className="info-nav">
-                                    <button onClick={showMinicursoSEPEX_1}>Minicurso 2021/2022</button>
-                                    <button onClick={showMinicursoSEPEX_2}>Minicurso 2023/2024</button>
-                                </div>
+
+
                             </div>
-
-
                         </div>
+
+                        <div className='educationContent'>
+                            <div className='box box-miniCourse'>
+                                <div hidden={isVideo} className="information">
+                                    <h2>{courseTitle}</h2>
+                                    <iframe width="600" height="400" src={selectedCourse}>Carregando…</iframe>
+                                    <LearnMore/>
+                                </div>
+                                <div hidden={!isVideo} className="information">
+                                    <h2>{courseTitle}</h2>
+                                    <iframe hidden={!isVideo} width="720" height="405" src={selectedCourse}
+                                            title="Minicurso - Internet Quântica - parte 1" frameBorder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerPolicy="strict-origin-when-cross-origin"
+                                            allowFullScreen></iframe>
+                                    <LearnMore/>
+                                </div>
+
+                            </div>
+                            <div hidden={isVideo}>
+                                <button className="download-btn" onClick={downloadCoursePdf} onMouseEnter={downloadBtnHover}
+                                        onMouseLeave={downloadBtnHover}><img src={downloadBtnImage}/>Baixar PDF
+                                </button>
+                            </div>
+                            <div hidden={!isVideo}>
+                                <button className="download-btn" onClick={otherVideoPart} onMouseEnter={downloadBtnHover}
+                                        onMouseLeave={downloadBtnHover}>{part}
+                                </button>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
