@@ -12,8 +12,7 @@ function App() {
 
   return (
         <div>
-            <div>
-                <div className='nav-div'>
+            <div className='parent'>
                     <Router>
                         <Navbar />
                         <Routes>
@@ -26,7 +25,6 @@ function App() {
                     </Router>
 
                 </div>
-            </div>
         </div>
 
   )
